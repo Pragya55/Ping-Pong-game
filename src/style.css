@@ -1,0 +1,73 @@
+:root {
+  --time-duration: 9s;
+}
+
+body {
+  margin: 0px;
+}
+
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+
+h3 {
+  margin: 0px;
+}
+
+#rodOne {
+  position: absolute;
+  top: 0%;
+  background-color: #0000ff;
+  border: 2px solid black;
+  width: 20vw;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 5vh;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+#rodTwo {
+  position: absolute;
+  bottom: 0%;
+  color: white;
+  background-color: #0000ff;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 20vw;
+  height: 5vh;
+  text-align: center;
+  padding: 5px;
+}
+
+#ball {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(green 0%, black 221%);
+  box-sizing: border-box;
+}
+
+.animateTopRight {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(-2000px);
+}
+
+.animateTopLeft {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(-2000px);
+}
+
+.animateBottomRight {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(2000px);
+}
+
+.animateBottomLeft {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(2000px);
+}
